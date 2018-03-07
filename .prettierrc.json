@@ -1,0 +1,4 @@
+{
+  allowLegacySDLEmptyFields: true,
+  allowLegacySDLImplementsInterfaces: true,
+}
