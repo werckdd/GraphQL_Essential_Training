@@ -1,0 +1,37 @@
+{
+  "name": "graphql_essential_training",
+  "version": "1.0.0",
+  "description": "GraphQL_Essential_Training",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js --exec babel-node -e js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/werckdd/GraphQL_Essential_Training.git"
+  },
+  "author": "QJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/werckdd/GraphQL_Essential_Training/issues"
+  },
+  "homepage": "https://github.com/werckdd/GraphQL_Essential_Training#readme",
+  "dependencies": {
+    "eslint": "^4.18.2",
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.1",
+    "nodemon": "^1.17.1",
+    "prettier": "^1.11.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0"
+  }
+}
