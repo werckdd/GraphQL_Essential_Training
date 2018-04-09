@@ -13,24 +13,33 @@ const typeDefs = `
 		contacts: [Contact]
 	}
 
+	type Alien {
+		id: ID
+		firstName: String
+		lastName: String 
+		planet: String
+	}
+
 	type Contact {
 		firstName: String
-		lastName: String	
+		lastName: String
 	}
 
 	enum Gender {
 		MALE
 		FEMALE
-		OTHER		
+		OTHER
 	}
 
 	type Query {
+		getOneFriend(id:ID!): Friend
 		getFriend(id:ID): Friend
+		getAliens: [Alien]
 	}
 
 	input FriendInput {
 		id: ID
-		firstName: String
+		firstName: String!
 		lastName: String 
 		gender: String
 		language: String
@@ -46,9 +55,11 @@ const typeDefs = `
 
 	type Mutation {
 		createFriend(input: FriendInput): Friend
+		updateFriend(input: FriendInput): Friend
+		deleteFriend(id: ID!):String
 	}
 `;
 
-const schema = makeExecutableSchema({ typeDefs, resolvers })
+const schema = makeExecutableSchema({ typeDefs, resolvers });
 
 export { schema };
